@@ -36,13 +36,13 @@ Just to be clear, this isn't limited strictly to UTM tags. And you can have more
 
 ```
 myImgTags = new URLParam();
-myImgTags.addParam("height", 640);
-myImgTags.addParam("width", 480);
+myImgTags.addParam("h", 640);
+myImgTags.addParam("w", 480);
 
 myUTMs = new URLParam();
 myUTMs.addParam("utm_source", "Facebook");
 myUTMs.addParam("utm_content", "logolink");
 
 myUTMs.addToLink( myImgTags.addToLink("https://mrandrewmills.com/images/example.png") );
-// returns https://mrandrewmills.com/images/example.png?height=640&width=480&utm_source=Facebook&utm_content=logolink"
+// returns https://mrandrewmills.com/images/example.png?h=640&w=480&utm_source=Facebook&utm_content=logolink"
 ```
